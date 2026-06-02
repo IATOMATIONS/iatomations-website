@@ -1,0 +1,11 @@
+{
+  "name": "iatomations-website",
+  "framework": "hugo",
+  "buildCommand": "hugo --gc --minify",
+  "outputDirectory": "public",
+  "installCommand": "",
+  "github": {
+    "silent": true,
+    "autoAlias": true
+  }
+}

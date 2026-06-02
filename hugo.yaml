@@ -1,0 +1,30 @@
+baseURL: 'https://iatomations.com/'
+languageCode: 'en-us'
+title: 'IATOMATIONS - AI-Powered E-commerce & Web Automation Studio'
+theme: 'ananke'
+publishDir: 'public'
+defaultContentLanguage: 'en'
+disableKinds: ['RSS', 'sitemap', 'robotsTXT', '404']
+
+languages:
+  en:
+    languageName: 'English'
+    weight: 1
+  es:
+    languageName: 'Español'
+    weight: 2
+
+params:
+  description: 'B2B Tech Growth Agency — AI-powered e-commerce automation, Shopify development, web design, and growth systems.'
+  author: 'IATOMATIONS'
+  site_logo: '/images/logo.png'
+
+permalinks:
+  page:
+    '/:slug/'
+
+markup:
+  defaultMarkdownHandler: goldmark
+  goldmark:
+    renderer:
+      unsafe: true
