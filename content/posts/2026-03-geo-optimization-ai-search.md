@@ -42,4 +42,4 @@ The shift from search engines to answer engines is happening faster than the shi
 
 By implementing a strict GEO framework, you don't just improve your Google rankings; you position your brand as the authoritative, definitive answer in the AI ecosystem.
 
- [Request Free Web Architecture Audit →]([https://iatomations.com/audit](https://iatomations.com/audit))
+ [Request Free Web Architecture Audit →](https://iatomations.com/audit)

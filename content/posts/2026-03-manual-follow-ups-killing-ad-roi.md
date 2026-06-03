@@ -71,4 +71,4 @@ When human reps delay responses, the lead loses interest or contacts a competito
 Does automated follow-up replace human salespeople?
 No. Automation and AI replace the tedious, administrative task of initial outreach, data entry, and filtering out unqualified tire-kickers. Your human sales team takes over the highly-qualified, pre-booked appointments to do what they do best: close the deal.
 
- [Request Free Pipeline Audit →]([https://iatomations.com/audit](https://iatomations.com/audit))
+ [Request Free Pipeline Audit →](https://iatomations.com/audit)

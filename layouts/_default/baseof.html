@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang | default "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+  <meta name="description" content="{{ .Params.description | default .Site.Params.description }}">
+  <meta name="author" content="{{ .Site.Params.author }}">
+  <meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+  <meta property="og:description" content="{{ .Params.description | default .Site.Params.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif; line-height: 1.6; color: #1a1a2e; background: #fff; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    header { background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%); color: #fff; padding: 1rem 0; position: sticky; top: 0; z-index: 100; }
+    nav { display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-size: 1.5rem; font-weight: 700; color: #fff; text-decoration: none; letter-spacing: -0.5px; }
+    .logo span { color: #00d4ff; }
+    nav ul { display: flex; list-style: none; gap: 1.5rem; }
+    nav ul li a { color: #ccc; text-decoration: none; font-size: 0.9rem; transition: color 0.2s; text-transform: uppercase; letter-spacing: 1px; }
+    nav ul li a:hover { color: #00d4ff; }
+    main { min-height: 60vh; }
+    .hero { background: linear-gradient(135deg, #0f0c29 0%, #302b63 50%, #24243e 100%); color: #fff; padding: 6rem 0 4rem; text-align: center; }
+    .hero h1 { font-size: 3rem; margin-bottom: 1rem; line-height: 1.2; }
+    .hero h1 span { color: #00d4ff; }
+    .hero p { font-size: 1.2rem; color: #aaa; max-width: 700px; margin: 0 auto 2rem; }
+    .content { padding: 3rem 0; }
+    .content h1 { font-size: 2rem; margin-bottom: 1.5rem; }
+    .content h2 { font-size: 1.5rem; margin: 2rem 0 1rem; }
+    .content h3 { font-size: 1.2rem; margin: 1.5rem 0 0.5rem; }
+    .content p { margin-bottom: 1rem; }
+    .content ul, .content ol { margin: 1rem 0; padding-left: 2rem; }
+    .content li { margin-bottom: 0.5rem; }
+    .content a { color: #302b63; text-decoration: underline; }
+    .content a:hover { color: #00d4ff; }
+    .content img { max-width: 100%; height: auto; border-radius: 8px; margin: 1rem 0; }
+    .content blockquote { border-left: 4px solid #302b63; padding-left: 1rem; margin: 1rem 0; color: #666; }
+    footer { background: #0f0c29; color: #666; padding: 2rem 0; text-align: center; font-size: 0.85rem; }
+    @media (max-width: 768px) {
+      .hero h1 { font-size: 2rem; }
+      nav ul { gap: 0.8rem; }
+      nav ul li a { font-size: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="/" class="logo">IATOM<span>ATIONS</span></a>
+        <ul>
+          {{- $current := .RelPermalink -}}
+          {{- range .Site.Menus.main }}
+          <li><a href="{{ .URL }}"{{ if eq $current .URL }} style="color:#00d4ff;"{{ end }}>{{ .Name }}</a></li>
+          {{- end }}
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; {{ now.Format "2006" }} {{ .Site.Title }}. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

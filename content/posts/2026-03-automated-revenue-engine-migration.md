@@ -49,4 +49,4 @@ Fragmentation leads to lost data, duplicate entry work, broken tracking pixels, 
 What is an Automated Revenue Engine?
 It is a unified digital architecture—typically built around GoHighLevel—where web hosting, CRM pipelines, calendar bookings, AI automation, and email marketing all exist and communicate natively within the same ecosystem.
 
- [Get Your Migration Blueprint →]([https://iatomations.com/audit](https://iatomations.com/audit))
+ [Get Your Migration Blueprint →](https://iatomations.com/audit)

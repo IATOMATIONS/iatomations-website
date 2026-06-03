@@ -41,4 +41,4 @@ At IATOMATIONS, we build architectures that completely eliminate fragmentation. 
 
 When your entire company operates from a single source of truth, follow-ups happen instantly, automation handles the tedious tasks, and your human team can focus exclusively on what matters: closing the deal.
 
- [Request Free CRM Architecture Audit →]([https://iatomations.com/audit](https://iatomations.com/audit))
+ [Request Free CRM Architecture Audit →](https://iatomations.com/audit)

@@ -59,4 +59,4 @@ An Automated Booking Engine is a centralized system that pre-qualifies inbound l
 How does AI improve the B2B scheduling process?
 Before granting access to a senior engineer's or consultant's calendar, an AI Agent can ask mandatory technical questions. If the lead does not meet the criteria, the AI routes them to a lower-tier funnel instead of wasting your team's time.
 
- [Request Free Pipeline Audit →]([https://iatomations.com/audit](https://iatomations.com/audit))
+ [Request Free Pipeline Audit →](https://iatomations.com/audit)

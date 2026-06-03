@@ -61,4 +61,4 @@ Our systems utilize an initial internal feedback loop. We ask the customer to ra
 Does review velocity affect local SEO rankings?
 Yes. Google's algorithm heavily favors businesses with a steady, consistent flow of recent reviews. Generating automated reviews signals to search engines that your business is highly active and trusted, pushing you higher in the Local Map Pack.
 
- [Request Free Reputation Audit →]([https://iatomations.com/audit](https://iatomations.com/audit))
+ [Request Free Reputation Audit →](https://iatomations.com/audit)
