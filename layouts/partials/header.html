@@ -1,0 +1,61 @@
+<header class="site-header">
+  <nav class="container">
+    <div class="logo">
+      <a href="{{ .Site.BaseURL }}">
+        <img src="{{ "images/logo-iatomations.png" | absURL }}" alt="IATOMATIONS Logo" height="40">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="{{ "solutions" | relURL }}">Solutions</a></li>
+      <li><a href="{{ "cases" | relURL }}">Case Studies</a></li>
+      <li><a href="{{ "blog" | relURL }}">Blog</a></li>
+      <li><a href="{{ "contact" | relURL }}">Contact</a></li>
+      <li><a href="{{ "es" | relURL }}">ES</a></li>
+    </ul>
+  </nav>
+</header>
+
+<style>
+.site-header {
+  padding: 20px 0;
+  background: white;
+  box-shadow: 0 2px 4px rgb(0 0 0 / 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.site-header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--text);
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--primary);
+}
+
+.cross-site-nav {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: white;
+  padding: 12px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  z-index: 1000;
+}
+</style>

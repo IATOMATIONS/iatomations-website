@@ -1,15 +1,50 @@
 {{ define "main" }}
-<section class="page-content">
+<section>
   <div class="container">
-    <div class="content">
-      <h1>{{ .Title }}</h1>
-      {{ .Content }}
-      <ul>
-      {{ range .Pages }}
-        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-      {{ end }}
-      </ul>
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </div>
+</section>
+
+<!-- Solutions Grid -->
+<section id="solutions" style="background: var(--bg-alt);">
+  <div class="container">
+    <h2>Our Solutions</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>🤖 AI-Powered Agents</h3>
+        <p>Automated lead qualification, nurturing, and follow-ups that work 24/7.</p>
+      </div>
+      <div class="card">
+        <h3>🛍️ E-Commerce Integration</h3>
+        <p>Shopify, WooCommerce, and custom solutions with unified inventory.</p>
+      </div>
+      <div class="card">
+        <h3>📈 Marketing Automation</h3>
+        <p>Email sequences, SMS campaigns, and behavioral trigger systems.</p>
+      </div>
+      <div class="card">
+        <h3>🔗 System Integration</h3>
+        <p>Connect your CRM, ERP, and tools into one seamless workflow.</p>
+      </div>
+      <div class="card">
+        <h3>📊 Analytics & Reporting</h3>
+        <p>Real-time dashboards and AI-powered insights for decision making.</p>
+      </div>
+      <div class="card">
+        <h3>🎯 SEO & GEO Optimization</h3>
+        <p>Local search optimization and geo-targeted content strategies.</p>
+      </div>
     </div>
+  </div>
+</section>
+
+<!-- Cross-link to ENGCO -->
+<section>
+  <div class="container">
+    <h2>Related: Our Construction Partner</h2>
+    <p>Need industrial construction or infrastructure? Check out our partner:</p>
+    <a href="https://engcoec.com" class="btn btn-primary" style="margin-top: 20px;">Visit ENGCO EC →</a>
   </div>
 </section>
 {{ end }}
