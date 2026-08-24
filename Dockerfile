@@ -1,4 +1,4 @@
-FROM klakegg/hugo:0.128.0-ext-alpine AS builder
+FROM hugomods/hugo:exts AS builder
 WORKDIR /src
 COPY . .
 RUN hugo --minify --cleanDestinationDir
