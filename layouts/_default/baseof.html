@@ -1,10 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="{{ .Site.LanguageCode }}" dir="ltr">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>{{ .Title }} | IATOMATIONS</title>
   <meta name="description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
+  
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://iatomations.com">
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" as="font" href="{{ "css/style.css" | absURL }}">
   
   <!-- Open Graph -->
   <meta property="og:type" content="website">
@@ -12,6 +20,7 @@
   <meta property="og:title" content="{{ .Title }} | IATOMATIONS">
   <meta property="og:description" content="{{ if .Params.description }}{{ .Params.description }}{{ else }}{{ .Site.Params.description }}{{ end }}">
   <meta property="og:image" content="{{ .Site.BaseURL }}images/og-default.jpg">
+  <meta property="og:locale" content="es_EC">
   
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
@@ -21,22 +30,21 @@
   <!-- Canonical -->
   <link rel="canonical" href="{{ .Permalink }}">
   
-  <!-- Styles -->
-  <link rel="stylesheet" href="{{ "css/style.css" | absURL }}">
+  <!-- Styles (deferred, async) -->
+  <link rel="stylesheet" href="{{ "css/style.css" | absURL }}" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="{{ "css/style.css" | absURL }}"></noscript>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="{{ "favicon.png" | absURL }}">
+  <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | absURL }}">
 </head>
 <body>
   {{ partial "header.html" . }}
   
-  <main>
+  <main role="main">
     {{ block "main" . }}{{ end }}
   </main>
   
   {{ partial "footer.html" . }}
-  
-  <!-- Cross-site navigation -->
-  <nav class="cross-site-nav">
-    <a href="https://engcoec.com" class="cross-link">🏗️ ENGCO EC</a>
-    <a href="https://laescenaec.com" class="cross-link">🎭 LA ESCENA EC</a>
-  </nav>
 </body>
 </html>
