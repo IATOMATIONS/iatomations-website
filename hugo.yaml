@@ -1,4 +1,4 @@
-baseURL: 'https://iatomations.com/'
+baseURL: 'https://iatomation.com/'
 languageCode: 'en-us'
 title: 'IATOMATIONS - AI-Powered E-commerce & Web Automation Studio'
 publishDir: 'public'

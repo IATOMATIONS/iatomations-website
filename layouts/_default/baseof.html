@@ -29,7 +29,16 @@
   
   <!-- Canonical -->
   <link rel="canonical" href="{{ .Permalink }}">
-  
+
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D1R0KTRF4E"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-D1R0KTRF4E');
+  </script>
+
   <!-- Styles (deferred, async) -->
   <link rel="stylesheet" href="{{ "css/style.css" | absURL }}" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="{{ "css/style.css" | absURL }}"></noscript>
